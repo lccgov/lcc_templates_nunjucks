@@ -1,7 +1,7 @@
-
+<%- before_html %>
 <!DOCTYPE html >
-<html>
-    <head >
+<%- html_start_tag %>
+    <head <%- head_attribute %>>
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -12,17 +12,17 @@
 
         <!-- Font Awesome -->
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" />
-        <link rel="stylesheet" href="{{ asset_path }}stylesheets/lcc-template.css?1.0.12"/>
+        <link rel="stylesheet" href="<%= asset_path("lcc-template.css") %>"/>
         <!-- Google Fonts CSS -->
         <script src="/_catalogs/masterpage/subsites/js/modernizr.js"></script>
         <script src="/_catalogs/masterpage/js/respond.min.js"></script>
         <meta name="GENERATOR" content="Microsoft SharePoint" />
         <meta http-equiv="Content-type" content="text/html; charset=utf-8" />
         <meta http-equiv="Expires" content="0" />
-        <title>{% block page_title %}{% endblock %}</title>
+        <%- head_end %>
         </head>
-    <body >
-    
+    <body <%- body_attribute %>>
+    <%- body_start %>
         <div id="s4-workspace">
             <div id="s4-bodyContainer">
                 <!-- COOKIES -->
@@ -60,7 +60,7 @@
                                                 <div class="input-group">
                                                     <!--sharepoint search-->
                                                     <div data-name="search_box">
-                                                          {% include "includes/search_global.html" %}                                          
+                                                          <%- search_box %>                                          
                                                     </div>
                                                     <!-- end sharepoint search -->
                                                 </div>
@@ -103,7 +103,7 @@
                         <div class="container-fluid">
                             <!-- sharepoint nav -->
                             <div data-name="main_nav">
-                            {% include "includes/nav_global.html" %}
+                            <%- main_nav %>
                             </div>
                             <!--/.sharepoint nav -->
                         </div>
@@ -114,7 +114,7 @@
                 <!-- /.header -->
                 <!-- MAIN CONTENT -->
                 <div data-name="bodycontent">
-                  {% block bodycontent %}{% endblock %}
+                  <%- body_content %>
                 </div>
                 <!-- /MAIN CONTENT -->
                 <!-- footer -->
@@ -126,7 +126,7 @@
                                 <nav class="footer">
                                     <!-- sharepoint nav -->
                                     <div data-name="footer_main_nav">
-                                       {% include "includes/footer_global.html" %}
+                                       <%- footer_nav %>
                                     </div>
                                     <!--/.sharepoint nav -->
                                     <!-- /.container -->
@@ -210,9 +210,9 @@
                 <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.0/jquery-ui.min.js" type="text/javascript"></script>
                 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 				<script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.5/handlebars.min.js"></script>
-                <script src="{{ asset_path }}javascripts/lcc-template.js?1.0.12"></script>
+                <script src="<%= asset_path("lcc-template.js") %>"></script>
             </div>
         </div>
-        
+        <%- body_end %>
    </body>
-</html>
+<%- html_end_tag %>
