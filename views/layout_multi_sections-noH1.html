@@ -13,15 +13,25 @@
                     {% block breadcrumb %}{% endblock %} 
              </div>
             </div>
+            </div>
+            <div class="row">
             <div class="col-md-8">
-                {% block sectionOneContent %}{% endblock %}
                 {% block pageContent %}{% endblock %} 
+                {% block sectionOneContent %}{% endblock %}
             </div>
             <div class="col-md-4">
                   {% block sectionOneRightHandColumn %}{% endblock %}
             </div>
         </div>
-        <div class="row">
+         <div class="row">
+            <div class="col-md-6>
+                {% block sectionOneHalf %}{% endblock %}
+            </div>
+               <div class="col-md-6>
+                {% block sectionOneRight %}{% endblock %}
+            </div>
+        </div>
+           <div class="row">
             <div class="col-lg-12">
                 {% block sectionOneFullBottom %}{% endblock %}
             </div>
