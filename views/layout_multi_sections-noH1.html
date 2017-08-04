@@ -18,6 +18,22 @@
             <div class="col-md-8">
                 {% block pageContent %}{% endblock %} 
                 {% block sectionOneContent %}{% endblock %}
+                <div class="row">
+                    <div class="col-sm-6">
+                        {% block sectionOneContentHalf1 %}{% endblock %}
+                    </div>
+                    <div class="col-sm-6">
+                        {% block sectionOneContentHalf2 %}{% endblock %}
+                    </div>
+                </div> 
+                <div class="row">
+                    <div class="col-sm-6">
+                        {% block sectionOneContentHalf3 %}{% endblock %}
+                    </div>
+                    <div class="col-sm-6">
+                        {% block sectionOneContentHalf4 %}{% endblock %}
+                    </div>
+                </div>
             </div>
             <aside role="complementary" class="col-md-4">
                   {% block sectionOneRightHandColumn %}{% endblock %}
