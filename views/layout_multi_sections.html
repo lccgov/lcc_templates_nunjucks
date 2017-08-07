@@ -21,15 +21,13 @@
                      {% block sectionOneContentTop %}{% endblock %}
                         {% block pageContent %}{% endblock %} 
                         {% block sectionOneContent %}{% endblock %}
-                        <div class="row">
+                        <div class="row column-halfs">
                             <div class="col-sm-6">
                                 {% block sectionOneContentHalf1 %}{% endblock %}
                             </div>
                             <div class="col-sm-6">
                                 {% block sectionOneContentHalf2 %}{% endblock %}
                             </div>
-                        </div> 
-                        <div class="row">
                             <div class="col-sm-6">
                                 {% block sectionOneContentHalf3 %}{% endblock %}
                             </div>
@@ -63,7 +61,7 @@
                 {% block sectionOneFullBottom %}{% endblock %}
             </div>
         </div>
-        <div class="row">
+        <div class="row column-thirds">
             <div class="col-sm-4 column-third">
                {% block sectionOneThirdCol1 %}{% endblock %}
             </div>
@@ -73,8 +71,6 @@
             <div class="col-sm-4 column-third">
                {% block sectionOneThirdCol3 %}{% endblock %}
             </div>
-        </div>
-        <div class="row">
             <div class="col-sm-4 column-third">
                {% block sectionOneThirdCol4 %}{% endblock %}
             </div>
