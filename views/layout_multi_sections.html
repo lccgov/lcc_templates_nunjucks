@@ -21,25 +21,27 @@
 				<div class="row">
 					<div class="col-md-8">
 						<h1>{% block header %}{% endblock %}</h1> 
-						{% block pageOverview %}{% endblock %} 
-						{% block sectionOneContentTop %}{% endblock %}
-						{% block pageContent %}{% endblock %} 
-						{% block sectionOneContent %}{% endblock %}
-						<div class="row column-halfs">
-							<div class="col-sm-6">
-								{% block sectionOneContentHalf1 %}{% endblock %}
+						<div class="text">
+							{% block pageOverview %}{% endblock %} 
+							{% block sectionOneContentTop %}{% endblock %}
+							{% block pageContent %}{% endblock %} 
+							{% block sectionOneContent %}{% endblock %}
+							<div class="row column-halfs">
+								<div class="col-sm-6">
+									{% block sectionOneContentHalf1 %}{% endblock %}
+								</div>
+								<div class="col-sm-6">
+									{% block sectionOneContentHalf2 %}{% endblock %}
+								</div>
+								<div class="col-sm-6">
+									{% block sectionOneContentHalf3 %}{% endblock %}
+								</div>
+								<div class="col-sm-6">
+									{% block sectionOneContentHalf4 %}{% endblock %}
+								</div>
 							</div>
-							<div class="col-sm-6">
-								{% block sectionOneContentHalf2 %}{% endblock %}
-							</div>
-							<div class="col-sm-6">
-								{% block sectionOneContentHalf3 %}{% endblock %}
-							</div>
-							<div class="col-sm-6">
-								{% block sectionOneContentHalf4 %}{% endblock %}
-							</div>
+							{% block sectionOneContentBottom %}{% endblock %}
 						</div>
-						{% block sectionOneContentBottom %}{% endblock %}
 					</div>
 					<aside role="complementary" class="col-md-4">
 						{% block sectionOneRightHandColumn %}{% endblock %}
